@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *
+       {
+         margin:0;
+         padding:0;
+         box-sizing: border-box;
+         border: none;
+       }
+       .container
+       {
+        width: 100vw;
+        height:100vh;
+        background-color: aliceblue;
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow:scroll;
+        flex-wrap: wrap;
+       }
+       .box1
+       {
+        width:300px;
+        height:400px;
+        background-image:url(https://www.organic-center.org/sites/default/files/styles/apb_feature_box/public/recipe/wild-blend-with-apples-sausage-butternut-squash_website-00449.jpg?itok=q977Qwr4) ;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(0,0,0);
+        padding:20px;
+        margin:20px;
+       }
+       .box2
+       {
+        width:300px;
+        height:400px;
+        background-image:url(https://www.pure-flavor.com/wp-content/uploads/PF-Cucumber-Sushi-Spirals.jpg) ;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(0,0,0);
+        padding:20px;
+        margin:20px;
+       }
+       .box3
+       {
+        width:300px;
+        height:400px;
+        background-image:url(https://www.organic-center.org/sites/default/files/styles/apb_feature_box/public/recipe/fig-burrata-salad-with-red-rice_website.jpg?itok=Q6gTWxr8) ;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(0,0,0);
+        padding:20px;
+        margin:20px;
+       }
+       .heading
+       {
+        color:white;
+        font-size: 30px;
+        text-shadow: 0 0 20px black;
+       }
+       .sub-heading
+       {
+        color:white;
+        font-size: 20px;
+        text-shadow:0 0 10px black;
+       }
+       button
+       {
+          background-color: white;
+          color:black;
+          padding:12px;
+          cursor: pointer;
+          margin-top: 15px;
+          box-shadow: 0 0 10px black;
+          border-radius: 10px;
+
+       }
+       @media(max-width:1000px)
+       {
+           .container{
+            flex-direction: column;
+            align-items: center;
+           }
+       }
+       @media(max-width:500px)
+       {
+        .container{
+            flex-direction:row;
+        }
+        .heading{
+            font-size:35px;
+        }
+        button{
+            padding:6px;
+            font-size:8px;
+
+
+        }
+        .box1{
+            overflow-x:scroll;
+        }
+        .box2{
+            overflow-x:scroll;
+        }
+        .box3{
+            overflow-x:scroll;
+        }
+       }
+    </style>
+</head>
+<body>
+     <div class="container">
+       <div class="box1">
+        <h1 class="heading">100% Organic</h1>
+        <p class="sub-heading">Feel the Taste</p>
+        <button>Shop Now-></button>
+       </div>
+
+       <div class="box2">
+        <h1 class="heading">100% Organic</h1>
+        <p class="sub-heading">Feel the Taste</p>
+        <button>Shop Now-></button>
+       </div>
+
+       <div class="box3">
+        <h1 class="heading">100% Organic</h1>
+        <p class="sub-heading">Feel the Taste</p>
+        <button>Shop Now-></button>
+       </div>
+
+    </div>
+     
+</body>
+</html>
